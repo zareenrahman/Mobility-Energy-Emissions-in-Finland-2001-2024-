@@ -66,40 +66,80 @@ Saves five figures: time series, two scatter plots with trendlines, rolling corr
 
 ---
 
-## Core Results (from Artifacts)
+## Core Results
 
-**1) Time series (normalized)**  
-![Time Series (normalized)](results/figures/fig_timeseries_normalized.png`)  
-Emissions peak in the mid-2000s, then trend downward from the 2010s. Electricity and registrations fluctuate more.  
-From ~2015 onward, emissions fall while electricity and registrations do not move in lockstep, showing decoupling.
+### Time Series (Normalized)
+![Time Series (Normalized)](results/figures/fig_timeseries_normalized.png)
 
-**2) Emissions vs Electricity (scatter)**  
-![Emissions vs Electricity](results/figures/fig_scatter_emissions_vs_electricity.png`)
-Moderate positive slope, substantial spread. In OLS (levels), electricity is not significant (p≈0.29).  
-Interpretation: Total grid demand is a poor direct predictor of road transport emissions.
+Emissions peaked around the mid-2000s and have steadily declined since the 2010s.  
+Electricity use and vehicle registrations moved up and down more freely.  
+After roughly **2015**, emissions started falling even while electricity and registrations stayed flat —  
+a clear sign of **decoupling** between transport activity and CO₂ output.
 
-**3) Emissions vs Vehicle First Registrations (scatter)**  
-![Emissions vs Vehicles](results/fig_scatter_emissions_vs_vehicles.png`)
-Stronger positive association, steeper and tighter trendline. OLS (levels): vehicles significant (coef≈0.027, p=0.004).  
-Interpretation: Vehicle activity dominates emission levels over 2001–2024.
+---
 
-**4) 5-year Rolling Correlations**  
-![Rolling Correlations](results/figures/fig_rolling_correlations.png`)
-Emissions–Electricity: generally positive, dips around 2020–2022.  
-Emissions–Vehicles: mostly high and positive; dip in late-2000s (crisis period), then high again post-2018–2020.  
-Interpretation: Relationship structure changes over time; policy and technology shocks matter.
+### Emissions vs Electricity
+![Emissions vs Electricity](results/figures/fig_scatter_emissions_vs_electricity.png)
 
-**5) Lag Correlations (±3y)**  
-![Lag Correlations](results/figures/fig_lag_correlations.png`)
-Peaks near lag=0 for both electricity (~0.6) and vehicles (~0.75); fairly symmetric.  
-Interpretation: No strong lead–lag; series co-move within the same year.
+There’s a weak upward trend but a lot of scatter.  
+The OLS model shows **electricity use isn’t a significant factor** (p ≈ 0.29).  
+In simple terms, total grid electricity doesn’t directly explain transport emissions in Finland.
 
-**6) OLS Regression (levels and deltas)**  
-![Summary](results/ols_summary.txt`)
-Levels model: R²=0.584 (Adj R²=0.542). Vehicles significant (p=0.004); electricity not (p=0.288).  
-Deltas model: R²=0.251 (Adj R²=0.172). ΔElectricity marginal (p≈0.073); ΔVehicles not significant.  
-Interpretation: Activity (registrations) explains levels of emissions.  
-Short-term changes in energy or registrations do not linearly drive year-over-year emissions, consistent with efficiency gains and EV uptake after 2015.
+---
+
+### Emissions vs Vehicle First Registrations
+![Emissions vs Vehicles](results/figures/fig_scatter_emissions_vs_vehicles.png)
+
+Here, the relationship is much stronger and cleaner.  
+The OLS results show **vehicle registrations are statistically significant** (coef ≈ 0.027, p = 0.004).  
+That means years with more new cars on the road are strongly associated with higher transport emissions.
+
+---
+
+### 5-Year Rolling Correlations
+![Rolling Correlations](results/figures/fig_rolling_correlations.png)
+
+- **Emissions ↔ Electricity:** generally positive but dipped between 2020–2022.  
+- **Emissions ↔ Vehicles:** mostly strong and positive, with a brief drop during the late-2000s crisis years.
+
+These changing patterns show how **policy shifts and new technologies** periodically reshape the relationship between travel, power, and pollution.
+
+---
+
+### Lag Correlations (±3 Years)
+![Lag Correlations](results/figures/fig_lag_correlations.png)
+
+Both electricity (~0.6) and vehicles (~0.75) line up best at **lag = 0**.  
+So neither variable leads the other — they move together in the same year.  
+Transport emissions react almost immediately to changes in activity levels.
+
+---
+
+### OLS Regression (Levels and Deltas)
+📄 [Read full OLS summary](results/ols_summary.txt)
+
+**Levels model:**  
+- R² = 0.584 (Adj R² = 0.542)  
+- Vehicles significant (p = 0.004)  
+- Electricity not significant (p = 0.288)
+
+**Year-over-Year Changes:**  
+- R² = 0.251 (Adj R² = 0.172)  
+- ΔElectricity marginal (p ≈ 0.073)  
+- ΔVehicles not significant
+
+**In Words:** 
+New vehicle activity explains overall emission levels,  
+but short-term jumps or dips in electricity or registrations don’t drive yearly emission swings.  
+That fits with Finland’s **improving fuel efficiency and early EV adoption** after 2015.
+
+---
+
+### Summary Takeaway
+Transport emissions in Finland are still tied to how many cars hit the road,  
+but the link between overall energy demand and emissions is fading.  
+Cleaner cars and better technology are helping emissions drop,  
+even as electricity use and vehicle numbers fluctuate.
 
 ---
 
