@@ -53,14 +53,16 @@ python src/visualization.py --in-csv results/merged_finland_2001_2024.csv --out-
 
 ## What the Code Does (Succinct)
 
-- **src/preprocess.py** 
+1. **src/preprocess.py**
 Filters road transportation emissions (kt CO₂e), selects total electricity consumption (GWh), extracts all automobiles (Mainland Finland first registrations), and merges by year (2001–2024).
 
-- **src/analysis.py**: Computes z-scores and year-over-year deltas, Pearson correlations (levels and deltas), 5-year rolling correlations, ±3-year lag correlations, and runs OLS regressions:  
+2. **src/analysis.py**
+Computes z-scores and year-over-year deltas, Pearson correlations (levels and deltas), 5-year rolling correlations, ±3-year lag correlations, and runs OLS regressions:  
 - emissions_ktco2e ~ electricity_gwh + vehicles_first_reg  
 - d_emissions ~ d_electricity + d_vehicles
 
--**src/visualization.py**: Saves five figures: time series, two scatter plots with trendlines, rolling correlations, and lag correlations.
+3. **src/visualization.py**
+Saves five figures: time series, two scatter plots with trendlines, rolling correlations, and lag correlations.
 
 ---
 
