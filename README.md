@@ -69,7 +69,7 @@ Saves five figures: time series, two scatter plots with trendlines, rolling corr
 ## Core Results
 
 ### Time Series (Normalized)
-![Time Series (Normalized)](results/figures/fig_timeseries_normalized.png)
+<img src="results/figures/fig_timeseries_normalized.png" alt="Time Series (Normalized)" width="50%">
 
 Emissions peaked around the mid-2000s and have steadily declined since the 2010s.  
 Electricity use and vehicle registrations moved up and down more freely.  
