@@ -1,0 +1,5 @@
+metric,pearson_r
+levels_electricity,0.608
+levels_vehicles,0.748
+deltas_electricity,0.492
+deltas_vehicles,0.33
