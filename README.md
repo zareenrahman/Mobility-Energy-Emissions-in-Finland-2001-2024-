@@ -142,10 +142,7 @@ New vehicle activity explains overall emission levels, but short-term jumps or d
 ---
 
 ### Summary Takeaway
-Transport emissions in Finland are still tied to how many cars hit the road,  
-but the link between overall energy demand and emissions is fading.  
-Cleaner cars and better technology are helping emissions drop,  
-even as electricity use and vehicle numbers fluctuate.
+Transport emissions in Finland are still tied to how many cars hit the road, but the link between overall energy demand and emissions is fading. Cleaner cars and better technology are helping emissions drop, even as electricity use and vehicle numbers fluctuate.
 
 ---
 
