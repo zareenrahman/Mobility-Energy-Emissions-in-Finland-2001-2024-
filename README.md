@@ -69,36 +69,35 @@ Saves five figures: time series, two scatter plots with trendlines, rolling corr
 ## Core Results
 
 ### Time Series (Normalized)
-<img src="results/figures/fig_timeseries_normalized.png" alt="Time Series (Normalized)" width="50%">
-
-Emissions peaked around the mid-2000s and have steadily declined since the 2010s.  
-Electricity use and vehicle registrations moved up and down more freely.  
-After roughly **2015**, emissions started falling even while electricity and registrations stayed flat —  
-a clear sign of **decoupling** between transport activity and CO₂ output.
+<div align="center">
+  <img src="results/figures/fig_timeseries_normalized.png" alt="Time Series (Normalized)" width="60%">
+</div>
+Emissions peaked around the mid-2000s and have steadily declined since the 2010s. Electricity use and vehicle registrations moved up and down more freely. After roughly **2015**, emissions started falling even while electricity and registrations stayed flat, a clear sign of **decoupling** between transport activity and CO₂ output.
 
 ---
 
 ### Emissions vs Electricity
-![Emissions vs Electricity](results/figures/fig_scatter_emissions_vs_electricity.png)
-
-There’s a weak upward trend but a lot of scatter.  
-The OLS model shows **electricity use isn’t a significant factor** (p ≈ 0.29).  
-In simple terms, total grid electricity doesn’t directly explain transport emissions in Finland.
+<div align="center">
+  <img src="results/figures/fig_scatter_emissions_vs_electricity.png" alt="Emissions vs Electricity" width="60%">
+</div>
+- There’s a weak upward trend but a lot of scatter.
+- The OLS model shows **electricity use isn’t a significant factor** (p ≈ 0.29).
+- In simple terms, total grid electricity doesn’t directly explain transport emissions in Finland.
 
 ---
 
 ### Emissions vs Vehicle First Registrations
-![Emissions vs Vehicles](results/figures/fig_scatter_emissions_vs_vehicles.png)
-
-Here, the relationship is much stronger and cleaner.  
-The OLS results show **vehicle registrations are statistically significant** (coef ≈ 0.027, p = 0.004).  
-That means years with more new cars on the road are strongly associated with higher transport emissions.
+<div align="center">
+  <img src="results/figures/fig_scatter_emissions_vs_vehicles.png" alt="Emissions vs Vehicles" width="60%">
+</div>
+Here, the relationship is much stronger and cleaner. The OLS results show **vehicle registrations are statistically significant** (coef ≈ 0.027, p = 0.004). That means years with more new cars on the road are strongly associated with higher transport emissions.
 
 ---
 
 ### 5-Year Rolling Correlations
-![Rolling Correlations](results/figures/fig_rolling_correlations.png)
-
+<div align="center">
+  <img src="results/figures/fig_rolling_correlations.png" alt="Rolling Correlations" width="60%">
+</div>
 - **Emissions ↔ Electricity:** generally positive but dipped between 2020–2022.  
 - **Emissions ↔ Vehicles:** mostly strong and positive, with a brief drop during the late-2000s crisis years.
 
@@ -107,10 +106,10 @@ These changing patterns show how **policy shifts and new technologies** periodic
 ---
 
 ### Lag Correlations (±3 Years)
-![Lag Correlations](results/figures/fig_lag_correlations.png)
-
-Both electricity (~0.6) and vehicles (~0.75) line up best at **lag = 0**.  
-So neither variable leads the other — they move together in the same year.  
+<div align="center">
+  <img src="results/figures/fig_lag_correlations.png" alt="Lag Correlations" width="60%">
+</div>
+Both electricity (~0.6) and vehicles (~0.75) line up best at **lag = 0**. So neither variable leads the other, they move together in the same year.
 Transport emissions react almost immediately to changes in activity levels.
 
 ---
@@ -129,9 +128,7 @@ Transport emissions react almost immediately to changes in activity levels.
 - ΔVehicles not significant
 
 **In Words:** 
-New vehicle activity explains overall emission levels,  
-but short-term jumps or dips in electricity or registrations don’t drive yearly emission swings.  
-That fits with Finland’s **improving fuel efficiency and early EV adoption** after 2015.
+New vehicle activity explains overall emission levels, but short-term jumps or dips in electricity or registrations don’t drive yearly emission swings. This pattern matches **Finland’s fuel efficiency improvements and early EV adoption** after 2015.
 
 ---
 
