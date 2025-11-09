@@ -1,4 +1,5 @@
 # Mobility-Energy-Emissions-in-Finland-2001-2024
+This project analyzes how road-transport emissions in Finland (2001–2024) relate to vehicle registrations and national electricity demand, using open Statistics Finland (StatFin) data. It builds a reproducible Python pipeline for preprocessing, statistical analysis, and visualization.
 
 ---
 
@@ -179,7 +180,7 @@ Overall, Finland’s open data systems make this kind of transparent, reproducib
 
 Activate virtual environment:
 ```
-..venv\Scripts\Activate.ps1
+.\.venv\Scripts\Activate.ps1
 ```
 Install dependencies:
 ```
@@ -199,3 +200,9 @@ A Reproducible Analysis of Road-Transport Emissions.*
 ## License
 
 MIT
+
+---
+
+## Acknowledgements
+Data © Statistics Finland (StatFin), used under CC BY 4.0.  
+Analytical design and visualization by Zareen Rahman (2025).
