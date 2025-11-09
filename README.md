@@ -69,33 +69,33 @@ Saves five figures: time series, two scatter plots with trendlines, rolling corr
 ## Core Results (from Artifacts)
 
 **1) Time series (normalized)**  
-File: `results/figures/fig_timeseries_normalized.png`  
+![Time Series (normalized)](results/figures/fig_timeseries_normalized.png`)  
 Emissions peak in the mid-2000s, then trend downward from the 2010s. Electricity and registrations fluctuate more.  
 From ~2015 onward, emissions fall while electricity and registrations do not move in lockstep, showing decoupling.
 
 **2) Emissions vs Electricity (scatter)**  
-File: `results/figures/fig_scatter_emissions_vs_electricity.png`  
+![Emissions vs Electricity](results/figures/fig_scatter_emissions_vs_electricity.png`)
 Moderate positive slope, substantial spread. In OLS (levels), electricity is not significant (p≈0.29).  
 Interpretation: Total grid demand is a poor direct predictor of road transport emissions.
 
 **3) Emissions vs Vehicle First Registrations (scatter)**  
-File: `results/fig_scatter_emissions_vs_vehicles.png`  
+![Emissions vs Vehicles](results/fig_scatter_emissions_vs_vehicles.png`)
 Stronger positive association, steeper and tighter trendline. OLS (levels): vehicles significant (coef≈0.027, p=0.004).  
 Interpretation: Vehicle activity dominates emission levels over 2001–2024.
 
 **4) 5-year Rolling Correlations**  
-File: `results/figures/fig_rolling_correlations.png`  
+![Rolling Correlations](results/figures/fig_rolling_correlations.png`)
 Emissions–Electricity: generally positive, dips around 2020–2022.  
 Emissions–Vehicles: mostly high and positive; dip in late-2000s (crisis period), then high again post-2018–2020.  
 Interpretation: Relationship structure changes over time; policy and technology shocks matter.
 
 **5) Lag Correlations (±3y)**  
-File: `results/figures/fig_lag_correlations.png`  
+![Lag Correlations](results/figures/fig_lag_correlations.png`)
 Peaks near lag=0 for both electricity (~0.6) and vehicles (~0.75); fairly symmetric.  
 Interpretation: No strong lead–lag; series co-move within the same year.
 
 **6) OLS Regression (levels and deltas)**  
-File: `results/ols_summary.txt`  
+![Summary](results/ols_summary.txt`)
 Levels model: R²=0.584 (Adj R²=0.542). Vehicles significant (p=0.004); electricity not (p=0.288).  
 Deltas model: R²=0.251 (Adj R²=0.172). ΔElectricity marginal (p≈0.073); ΔVehicles not significant.  
 Interpretation: Activity (registrations) explains levels of emissions.  
