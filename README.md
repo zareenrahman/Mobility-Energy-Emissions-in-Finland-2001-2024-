@@ -2,7 +2,7 @@
 
 ---
 
-## ⚙️ Setup & Run
+## Setup & Run
 
 ### Create a virtual environment
 
@@ -22,6 +22,9 @@ source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
+
+## Data Sources
+All datasets are from **Statistics Finland (StatFin)**, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/):
 
 ### 2) Place data files
 
