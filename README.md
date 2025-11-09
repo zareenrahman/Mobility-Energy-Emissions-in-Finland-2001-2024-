@@ -103,11 +103,13 @@ Short-term changes in energy or registrations do not linearly drive year-over-ye
 
 ---
 
-## Interpretation and Policy Takeaways
+## Interpretation and Outcomes
 
-Decoupling is underway: emissions fall despite variability in electricity and vehicles, consistent with fleet efficiency, hybrid/EV adoption, and policy impacts.  
-Electricity is not a direct driver: using total grid demand as an EV proxy is noisy; EV stock or charging data would improve inference.  
-Data governance in Finland supports reproducible, transparent climate accountability.
+Emissions are clearly decoupling from electricity use and vehicle registrations. In other words, road-transport emissions are falling even though energy use and new vehicle activity continue to vary. This likely reflects cleaner technologies, better fuel efficiency, and the growing share of hybrids and electric vehicles.
+
+Total electricity demand, however, doesn’t directly explain transport emissions. It’s too broad to capture EV adoption or charging behavior accurately. To understand electrification effects, future work should include EV stock and charging data.
+
+Overall, Finland’s open data systems make this kind of transparent, reproducible climate analysis possible, a strong example of how digital data supports environmental accountability.
 
 ---
 
@@ -128,20 +130,16 @@ Data governance in Finland supports reproducible, transparent climate accountabi
 
 ---
 
-## Troubleshooting (Windows / Cursor)
+## Troubleshooting
 
 Activate virtual environment:
+```
 ..venv\Scripts\Activate.ps1
-
-yaml
-Copy code
-
+```
 Install dependencies:
+```
 python -m pip install -r requirements.txt
-
-yaml
-Copy code
-
+```
 If vehicle headers differ (e.g., “2001 number”), adjust the regex in `load_vehicles()` to match the header.
 
 ---
