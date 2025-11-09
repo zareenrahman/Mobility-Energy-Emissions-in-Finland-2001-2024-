@@ -36,28 +36,24 @@ Files have two preamble lines before headers.
 ### 3) Run the pipeline
 
 **1) Parse and merge**
+```
 python src/preprocess.py --data-dir dataset --out-dir results
-
-bash
-Copy code
+```
 
 **2) Analytics (correlations, lag/rolling, OLS)**
+```
 python src/analysis.py --in-csv results/merged_finland_2001_2024.csv --out-dir results
-
-markdown
-Copy code
+```
 
 **3) Plots**
+```
 python src/visualization.py --in-csv results/merged_finland_2001_2024.csv --out-dir results/figures
-
-yaml
-Copy code
-
+```
 ---
 
 ## What the Code Does (Succinct)
 
-**src/preprocess.py**  
+**src/preprocess.py** 
 Filters road transportation emissions (kt CO₂e), selects total electricity consumption (GWh), extracts all automobiles (Mainland Finland first registrations), and merges by year (2001–2024).
 
 **src/analysis.py**  
