@@ -101,6 +101,7 @@ Here, the relationship is much stronger and cleaner. The OLS results show **vehi
 <div align="center">
   <img src="results/figures/fig_rolling_correlations.png" alt="Rolling Correlations" width="60%">
 </div>
+
 - **Emissions ↔ Electricity:** generally positive but dipped between 2020–2022.  
 - **Emissions ↔ Vehicles:** mostly strong and positive, with a brief drop during the late-2000s crisis years.
 
